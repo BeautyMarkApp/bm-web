@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config';
-
-import tailwind from '@astrojs/tailwind';
-
-// https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
-  integrations: [tailwind()]
+vite: {
+    plugins: [tailwindcss()],
+  },
+    // add yur domain name here
+   site: 'http://beautymark.app',
+  integrations: [sitemap()]
 });
