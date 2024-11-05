@@ -27,13 +27,13 @@ export default function Selector() {
         Take your beauty stash to the next level with BeautyMark Pro
       </h2>
 
-      <span class="pt-8 text-center max-w-3xl mx-auto inline-flex rounded-md shadow-sm">
+      <span class="mt-8 text-center max-w-3xl mx-auto inline-flex rounded-md shadow-sm rounded-xl ring-1 ring-gray-300">
         <button
           type="button"
           onClick={() => setSelectedTab('monthly')}
           className={clsx(
-            'relative inline-flex items-center rounded-l-xl  px-3 py-2 text-sm font-semibold border-l-gray-300 ring-inset focus:z-10',
-            selectedTab === 'monthly' ? 'bg-pink-500 hover:bg-pink-600 text-white ring-gray-300 hover:bg-gray-50' : '',
+            'relative inline-flex items-center rounded-l-xl  px-3 py-2 text-sm font-semibold  ring-inset focus:z-10',
+            selectedTab === 'monthly' ? 'bg-pink-500 hover:bg-pink-600 text-white ' : '',
             )}>
           Monthly
         </button>
@@ -41,8 +41,8 @@ export default function Selector() {
           type="button"
           onClick={() => setSelectedTab('yearly')}
           class={clsx(
-            'relative -ml-px inline-flex items-center px-3 py-2 text-sm font-semibold ring-1 ring-inset focus:z-10',
-            selectedTab === 'yearly' ? 'bg-pink-500 hover:bg-pink-600 text-gray-900 ring-gray-300 hover:bg-gray-50' : '',
+            'relative -ml-px inline-flex items-center px-3 py-2 text-sm font-semibold ring-inset focus:z-10',
+            selectedTab === 'yearly' ? 'bg-pink-500 hover:bg-pink-600 text-white ' : '',
           )}>
           Yearly
         </button>
@@ -50,8 +50,8 @@ export default function Selector() {
           type="button"
           onClick={() => setSelectedTab('lifetime')}
           class={clsx(
-            'relative -ml-px inline-flex items-center rounded-r-xl px-3 py-2 text-sm font-semibold ring-1 ring-inset focus:z-10',
-            selectedTab === 'lifetime' ? 'bg-pink-500 hover:bg-pink-600 text-gray-900 ring-gray-300 hover:bg-gray-50' : '',
+            'relative -ml-px inline-flex items-center rounded-r-xl px-3 py-2 text-sm font-semibold ring-inset focus:z-10',
+            selectedTab === 'lifetime' ? 'bg-pink-500 hover:bg-pink-600 text-white' : '',
           )}>
           Lifetime
         </button>
@@ -61,7 +61,7 @@ export default function Selector() {
     <div
       class="flex gap-4 items-start justify-center max-w-2xl py-4 mt-24 -mx-4 xl:-mx-12 sm:mx-auto lg:max-w-none"
     >
-      <section class="free flex flex-col order-first px-6 py-8 rounded-3xl sm:px-8 ring-1 ring-gray-400 lg:order-none">
+      <section class="free flex flex-col order-first px-6 py-8 rounded-3xl sm:px-8 ring-1 ring-gray-300 lg:order-none">
         <h3 class="mt-5 text-lg text-black font-display">Standard</h3>
         <p class="mt-2 text-sm text-gray-500">
           Good for those managing just the essentials.
