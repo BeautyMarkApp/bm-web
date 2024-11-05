@@ -59,9 +59,9 @@ export default function Selector() {
     </div>
     
     <div
-      class="flex gap-4 items-start justify-center max-w-2xl py-4 mt-24 -mx-4 xl:-mx-12 sm:mx-auto lg:max-w-none"
+      class="flex flex-wrap-reverse gap-4 items-start justify-center py-4 mt-24 mx-4 xl:-mx-12 sm:mx-auto md:flex-wrap lg:max-w-none"
     >
-      <section class="free flex flex-col order-first px-6 py-8 rounded-3xl sm:px-8 ring-1 ring-gray-300 lg:order-none">
+      <section class="free-tier flex flex-col order-first px-6 py-8 rounded-3xl sm:px-8 ring-1 ring-gray-300 sm:order-1 lg:order-2">
         <h3 class="mt-5 text-lg text-black font-display">Standard</h3>
         <p class="mt-2 text-sm text-gray-500">
           Good for those managing just the essentials.
@@ -103,8 +103,9 @@ export default function Selector() {
           aria-label="Wannabe tier"
           href="/register">Get started</a>
       </section>
+
       <section
-        class="pro flex flex-col order-first px-6 py-8 rounded-3xl sm:px-8 bg-pink-500 lg:order-none"
+        class="pro-tier flex flex-col order-first bg-pink-500 px-6 py-8 rounded-3xl  sm:px-8 sm:order-1 lg:order-2"
       >
         <h3 class="mt-5 text-lg text-white font-display">BeautyMark Pro</h3>
         <p class="mt-2 text-sm text-pink-100">
