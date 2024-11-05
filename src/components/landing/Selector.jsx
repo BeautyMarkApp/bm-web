@@ -22,7 +22,7 @@ export default function Selector() {
     <section aria-labelledby="pricing-section" id="pricing">
   <div class="lg:px-16 max-w-7xl md:px-12 mx-auto px-8 py-24 scroll-mt-12">
     <div class="text-center max-w-3xl mx-auto">
-      <img class="inline bg-center w-32 pb-8" src="./public/ProModeIcon-Light3x.png"/>
+      <img class="inline bg-center w-32 pb-8" src="/public/ProModeIcon-Light3x.png"/>
       <h2 class="text-4xl tracking-tight font-medium text-black md:text-5xl font-display">
         Take your beauty stash to the next level with BeautyMark Pro
       </h2>
