@@ -100,8 +100,8 @@ export default function Selector() {
         </ul>
         <a
           class="inline-flex items-center justify-center w-full px-6 py-3 h-12 mt-8 text-center text-black transition duration-200 ease-in-out transform bg-white border hover:bg-gray-200 hover:border-gray-200 rounded-xl focus:outline-none border-gray-200"
-          aria-label="Wannabe tier"
-          href="/register">Get started</a>
+          aria-label="Free tier"
+          href="https://testflight.apple.com/join/Kn6vV7E5">Get started</a>
       </section>
 
       <section
@@ -163,8 +163,8 @@ export default function Selector() {
         </ul>
         <a
           class="inline-flex items-center justify-center w-full px-6 py-3 h-12 mt-8 text-center text-black transition duration-200 ease-in-out transform bg-white border-2 border-white hover:bg-transparent hover:border-white rounded-xl hover:text-white focus:outline-none"
-          aria-label="Indie hacker tier"
-          href="/register">Get started</a>
+          aria-label="Pro tier"
+          href="https://testflight.apple.com/join/Kn6vV7E5">Get started</a>
       </section>
     </div>
   </div>
