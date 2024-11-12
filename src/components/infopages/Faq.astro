@@ -11,7 +11,7 @@
             Frequently asked questions
           </p>
           <p class="text-base mt-4 text-zinc-500">
-            Answers to commonly asked questions about our platform
+            Answers to commonly asked questions and concerns about BeautyMark.
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@
             @click="setActiveAccordion(id)"
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
-            <span>How does end-to-end encryption work?</span>
+            <span>What is a collection?</span>
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500 -rotate-[45deg]"
               :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -50,11 +50,10 @@
           </button>
           <div x-show="activeAccordion==id" x-collapse="">
             <div class="p-4 pt-2 text-zinc-500">
-              End-to-end encryption ensures that only the sender and recipient
-              can access the content of a message. The information is encrypted
-              on the sender's device and can only be decrypted by the intended
-              recipient, preventing any intermediaries, including the platform
-              provider, from accessing the data.
+              A collection is a grouped folders of related products. For example, 
+              we have “Travel” (for small sized things you should remember to pack), 
+              “Wishlist” (for products we don’t have but would like to buy when they go on sale) or 
+              “Favourite sunscreens” (for when friends ask Brittany what her favourite Korean sunscreen is 😅)
             </div>
           </div>
         </div>
@@ -68,7 +67,7 @@
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
             <span
-              >Can I access my encrypted data if I forget my encryption key?</span
+              >The brand I'm looking for won't autocomplete.</span
             >
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
@@ -90,11 +89,9 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              No, forgetting or losing your encryption key means that your
-              encrypted data cannot be accessed. This is a crucial security
-              measure to ensure that even if someone gains unauthorized access
-              to your account, they won't be able to decrypt and view your
-              messages or files.
+              That’s ok! Although we’ve added around 900 brands from Sephora, 
+              Ulta and Yesstyle, we haven’t caught them all. The textfields 
+              are also free-input, so you can just type in the brand that you have.
             </div>
           </div>
         </div>
@@ -108,8 +105,7 @@
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
             <span
-              >Are there any limitations to the self-destructing messages
-              feature?</span
+              >The app crashed when I was cropping my screenshot</span
             >
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
@@ -131,12 +127,7 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              Self-destructing messages are designed to automatically delete
-              themselves after a specific period or upon being read by the
-              recipient. However, it's important to note that the feature only
-              removes the message from the devices involved in the conversation.
-              Recipients may take screenshots or use other means to capture the
-              content, which is beyond the platform's control.
+              Woof. This is a bug we’re aware of but haven’t made headway towards fixing it. We think the problem happens when you press down (i.e. a loooooong tap gesture) while cropping. We know it’s annoying and we’re very sorry about this! 
             </div>
           </div>
         </div>
@@ -150,8 +141,7 @@
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
             <span
-              >What happens if I enable two-factor authentication and lose my
-              device?</span
+              >Can I use the app without subscribing?</span
             >
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
@@ -173,12 +163,7 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              Losing your device doesn't automatically compromise your account's
-              security. It's recommended to contact our support team as soon as
-              possible to disable the two-factor authentication on your lost
-              device and set up the authentication on your new device. This
-              process will help protect your account from unauthorized access
-              while ensuring you can regain access to it.
+              Absolutely! While you won’t have access to all the features available, you can create up to 20 products and 1 collection. 
             </div>
           </div>
         </div>
@@ -192,7 +177,7 @@
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
             <span
-              >Is my personal information shared or sold to third parties?</span
+              >I can’t upgrade to Pro</span
             >
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
@@ -214,10 +199,7 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              No, we strictly adhere to a privacy-centric approach. Your
-              personal information is never shared, sold, or monetized. We
-              prioritize your privacy and ensure that your data remains
-              confidential and only accessible to you.
+              Oh no! Make sure that you have a good internet connection, and that you’re signed in with your Apple ID. If it still doesn’t work, send us an email at support@beautymark.app and we’ll help you get it sorted out.
             </div>
           </div>
         </div>
@@ -230,7 +212,7 @@
             @click="setActiveAccordion(id)"
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
-            <span>Can I use this platform on multiple devices?</span>
+            <span>My products aren’t syncing across devices</span>
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
               :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -251,10 +233,14 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              Yes, you can access our platform on multiple devices. Your
-              encrypted data remains synced across all devices, allowing you to
-              seamlessly communicate and access your files and messages from
-              anywhere.
+              This usually means that there’s something wrong with your iCloud setup. Make sure 
+              that the information displayed in Settings &rarr; Data Management under the 
+              iCloud Status section makes sense. A green icon with a “Synced to iCloud message” 
+              means everything is a-ok. A red “error” icon means something is wrong. Make sure 
+              that you’ve enabled “Background App Refresh” (in iOS Settings &rarr; Apps &rarr; BeautyMark). 
+              Try killing and restarting the app, and giving it a couple of seconds to make another 
+              attempt at connecting to your iCloud. If you’re still having problems, send 
+              us an email at support@beautymark.app
             </div>
           </div>
         </div>
@@ -268,7 +254,7 @@
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
             <span
-              >Are there any storage limitations for files and documents?</span
+              >What’s a local backup?</span
             >
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
@@ -290,11 +276,11 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              Our platform provides ample storage space for your files and
-              documents. However, there may be storage limitations based on the
-              pricing plan you choose. We offer flexible plans to suit your
-              needs and provide options to upgrade if you require additional
-              storage capacity.
+              Under Settings &rarr; Data Management, you’ll see a Local Backups section. 
+              While the app is still in Beta, we’re aware that some changes might 
+              break your products, no matter how hard we try to avoid it. In these cases, 
+              if you have made a local backup, you can try to restore it and hope 
+              all your products get re-imported correctly
             </div>
           </div>
         </div>
@@ -307,7 +293,7 @@
             @click="setActiveAccordion(id)"
             class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
           >
-            <span>Is it possible to export my data from the platform?</span>
+            <span>My local backups aren’t syncing across devices</span>
             <svg
               class="w-5 h-5 duration-300 ease-out text-pink-500"
               :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -328,11 +314,9 @@
             style="display: none;"
           >
             <div class="p-4 pt-2 text-zinc-500">
-              Yes, you can export your data from the platform. We offer export
-              features that allow you to download your messages, files, and
-              documents, ensuring you have a local copy for backup or migration
-              purposes. It provides you with greater control and flexibility
-              over your data.
+              This is expected. Your local backups are local to your 
+              device, so that you can restore your products even when 
+              something goes wrong with the products saved in your iCloud.
             </div>
           </div>
         </div>
