@@ -22,7 +22,7 @@ export default function Selector() {
     <section aria-labelledby="pricing-section" id="pricing">
   <div class="lg:px-16 max-w-7xl md:px-12 mx-auto px-8 py-24 scroll-mt-12">
     <div class="text-center max-w-3xl mx-auto">
-      <img class="inline bg-center w-32 pb-8" src="/public/ProModeIcon-Light3x.png"/>
+      <img class="inline bg-center w-32 pb-8" src="/ProModeIcon-Light3x.png"/>
       <h2 class="text-4xl tracking-tight font-medium text-black md:text-5xl font-display">
         Take your beauty stash to the next level with BeautyMark Pro
       </h2>
@@ -100,8 +100,8 @@ export default function Selector() {
         </ul>
         <a
           class="inline-flex items-center justify-center w-full px-6 py-3 h-12 mt-8 text-center text-black transition duration-200 ease-in-out transform bg-white border hover:bg-gray-200 hover:border-gray-200 rounded-xl focus:outline-none border-gray-200"
-          aria-label="Wannabe tier"
-          href="/register">Get started</a>
+          aria-label="Free tier"
+          href="https://testflight.apple.com/join/Kn6vV7E5">Get started</a>
       </section>
 
       <section
@@ -163,8 +163,8 @@ export default function Selector() {
         </ul>
         <a
           class="inline-flex items-center justify-center w-full px-6 py-3 h-12 mt-8 text-center text-black transition duration-200 ease-in-out transform bg-white border-2 border-white hover:bg-transparent hover:border-white rounded-xl hover:text-white focus:outline-none"
-          aria-label="Indie hacker tier"
-          href="/register">Get started</a>
+          aria-label="Pro tier"
+          href="https://testflight.apple.com/join/Kn6vV7E5">Get started</a>
       </section>
     </div>
   </div>
