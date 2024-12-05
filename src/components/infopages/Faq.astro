@@ -15,6 +15,50 @@
           </p>
         </div>
       </div>
+
+<div
+        x-data="{
+  activeAccordion: '',
+  setActiveAccordion(id) {
+  this.activeAccordion = (this.activeAccordion == id) ? '' : id
+  }
+  }"
+        class="relative w-full mx-auto font-normal lg:col-span-2"
+      >
+        <div
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-black': activeAccordion==id, 'text-zinc-600 hover:text-pink-500': activeAccordion!=id }"
+          class="cursor-pointer group text-black"
+        >
+          <button
+            @click="setActiveAccordion(id)"
+            class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+          >
+            <span>My Pro status keeps getting reset after a day</span>
+            <svg
+              class="w-5 h-5 duration-300 ease-out text-pink-500 -rotate-[45deg]"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v12m6-6H6"></path></svg
+            >
+          </button>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <div class="p-4 pt-2 text-zinc-500">
+              This is an unfortunate quirk of how TestFlight works, and will be gone when we're out of Beta. In TestFlight, 
+time passes at an accelerated scale (each day only lasts 4 irl minutes 😅), and subscriptions get paused after 12 auto-renewals. Since
+you're not actually charged for any purchases while still in Beta, we recommend "purchasing" the "Lifetime" option, which doesn't 
+expire. We'll reset that for you when we launch the app in the AppStore, and we're no longer at the mercy of TestFlight's quirks.
+            </div>
+          </div>
+        </div>
+
       <div
         x-data="{
   activeAccordion: '',
