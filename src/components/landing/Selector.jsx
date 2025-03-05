@@ -137,6 +137,13 @@ export default function Selector() {
               class="w-4 h-4 md hydrated"
               name="checkmark-outline"
               role="img"
+              aria-label="checkmark outline"></ion-icon><span class="ml-4">Expiration date tracking</span>
+          </li>
+          <li class="flex items-center">
+            <ion-icon
+              class="w-4 h-4 md hydrated"
+              name="checkmark-outline"
+              role="img"
               aria-label="checkmark outline"></ion-icon><span class="ml-4">Themes and custom app icons</span>
           </li>
           <li class="flex items-center">
