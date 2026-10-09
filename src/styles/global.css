@@ -6,6 +6,12 @@
   --font-sans: "Inter", sans-serif;
   --font-display: "Bricolage Grotesque", sans-serif;
   --color-black: #121212;
+  /* Tailwind 4.0+ moved its palette to OKLCH, which renders these pinks brighter
+     than the 4.0 alpha the site was designed with. Keep the original values. */
+  --color-pink-100: #fce7f3;
+  --color-pink-400: #f472b6;
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
   --color-blue-50: #EBEDFF;
   --color-accent-50: #EBEDFF;
   --color-accent-100: #D6DAFF;
