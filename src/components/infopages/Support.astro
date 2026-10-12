@@ -1,3 +1,6 @@
+---
+import { supportGuides } from "./supportGuides";
+---
 <section>
   <div
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
@@ -9,8 +12,22 @@
         </h1>
       </div>
     </div>
+    <div class="mx-auto max-w-[40rem] pb-16">
+      <h2 class="text-2xl font-medium tracking-tight text-black font-display">Guides</h2>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {supportGuides.map((guide) => (
+          <li>
+            <a href={guide.href} class="block h-full rounded-2xl border border-black/5 bg-zinc-50 p-5 hover:border-pink-300 hover:bg-pink-50">
+              <span class="font-medium text-black">{guide.title}</span>
+              <span class="mt-1 block text-sm text-gray-500">{guide.summary}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
     <div>
-      <div class="mx-auto max-w-[40rem] prose-base prose text-gray-500 prose-h3:text-black prose-a:font-semibold prose-a:text-accent-300 hover:prose-a:text-black">
+      <h2 class="mx-auto max-w-[40rem] text-2xl font-medium tracking-tight text-black font-display">Get in touch</h2>
+      <div class="mx-auto mt-4 max-w-[40rem] prose-base prose text-gray-500 prose-h3:text-black prose-a:font-semibold prose-a:text-accent-300 hover:prose-a:text-black">
         <p>As much as we try to make BeautyMark perfect, pesky bugs sometimes slip through the cracks. 
           But don't worry, our team is always on the case to squash those little 
           troublemakers as quickly as possible! 🔧🐛

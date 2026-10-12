@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SupportArticle from "../../components/infopages/SupportArticle.astro";
+---
+<BaseLayout>
+  <SupportArticle path="/support/scan-a-product" title="Scan a product with your camera" intro="The fastest way to add something you own: snap its label and let BeautyMark do the typing. 📸">
+
+    <h2>Scan a product</h2>
+    <ol>
+      <li>Tap <strong>+</strong> at the bottom right. The <strong>Scan your product</strong> screen opens with your camera. (The first time, your iPhone asks to let BeautyMark use the camera.)</li>
+      <li>Point the camera at the label with the brand and product name, then tap the round shutter button.</li>
+      <li>After a moment of <strong>Reading label…</strong>, you'll see <strong>Is this your product?</strong> with the best matches. Tap yours.</li>
+      <li>BeautyMark fetches the product's photo and opens <strong>Add Product</strong> with the brand, name, shade, category, link and photo filled in. Check everything, change what you like, and tap <strong>Save</strong> (the ✓ on iOS 26 and later).</li>
+    </ol>
+
+    <h2>If your product isn't in the list</h2>
+    <p> Tap <strong>None of these – use what was read</strong> (or <strong>Fill in what was read</strong> when there were no matches). BeautyMark fills in what it could read from the label and keeps your photo as the product's photo. You can fix anything on the next screen before saving.
+    </p>
+    <p>Not happy with the photo? Tap <strong>Retake</strong> to try again.</p>
+
+    <h2>Other choices on the scan screen</h2>
+    <ul>
+      <li><strong>Photo library</strong> (the photos button, left of the shutter): use a photo you've already taken.</li>
+      <li><strong>Skip</strong>: go straight to an empty Add Product screen and <a href="/support/find-a-product">find the product by name</a> instead.</li>
+    </ul>
+
+    <h2>Tips for small or tricky labels</h2>
+    <ul>
+      <li><strong>Get close.</strong> On iPhones with a macro camera, BeautyMark switches lenses when you're close, just like the Camera app.</li>
+      <li><strong>Tap the label to focus</strong> (a yellow square shows where), and <strong>pinch to zoom</strong> if you can't get close enough.</li>
+      <li><strong>Find good light</strong> and tilt shiny or curved packaging until the glare is off the words.</li>
+      <li>Photograph the side with the <strong>brand and product name</strong>, not the ingredients.</li>
+      <li>On iPhones with Apple Intelligence turned on, BeautyMark can also make sense of labels for products that aren't in its list yet.</li>
+    </ul>
+
+    <h2>Is my photo uploaded anywhere?</h2>
+    <p> No. BeautyMark reads the label right on your iPhone. When you pick a match, it downloads that product's photo from the store. Your products, including any photo you keep, sync only through your own iCloud.
+    </p>
+
+    <h2>The camera screen just says the camera is off</h2>
+    <p> BeautyMark doesn't have permission to use your camera. Open the iPhone <strong>Settings</strong> app, scroll down to <strong>BeautyMark</strong>, and turn on <strong>Camera</strong>. You can still use <strong>Photo library</strong> or <strong>Skip</strong> in the meantime.
+    </p>
+  </SupportArticle>
+</BaseLayout>
