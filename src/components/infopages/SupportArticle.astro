@@ -20,7 +20,7 @@ const others = supportGuides.filter((guide) => guide.href !== path);
       </h1>
       <p class="mt-4 text-lg leading-7 text-gray-500">{intro}</p>
     </div>
-    <div class="mx-auto max-w-[40rem] prose-base prose text-gray-500 prose-h2:text-black prose-h2:font-medium prose-h2:text-2xl prose-strong:text-black prose-a:font-semibold prose-a:text-pink-500 hover:prose-a:text-black">
+    <div class="mx-auto max-w-[40rem] prose-base prose text-gray-500 prose-h2:text-black prose-h2:font-medium prose-h2:text-2xl prose-strong:text-black prose-a:font-bold prose-a:text-pink-500 prose-a:no-underline prose-a:decoration-wavy prose-a:hover:underline">
       <slot />
     </div>
     <div class="mx-auto max-w-[40rem] mt-16 border-t border-black/5 pt-10">
@@ -28,13 +28,13 @@ const others = supportGuides.filter((guide) => guide.href !== path);
       <ul class="mt-4 space-y-3">
         {others.map((guide) => (
           <li>
-            <a href={guide.href} class="font-medium text-pink-500 hover:text-black">{guide.title}</a>
+            <a href={guide.href} class="font-bold text-pink-500 decoration-wavy hover:underline">{guide.title}</a>
             <p class="text-sm text-gray-500">{guide.summary}</p>
           </li>
         ))}
       </ul>
       <p class="mt-10 text-sm text-gray-500">
-        Still stuck? Write to <a href="mailto:support@beautymark.app" class="font-semibold text-pink-500 hover:text-black">support@beautymark.app</a> or ask on our <a href="https://discord.gg/beautymark" class="font-semibold text-pink-500 hover:text-black">Discord</a>. 💖
+        Still stuck? Write to <a href="mailto:support@beautymark.app" class="font-bold text-pink-500 decoration-wavy hover:underline">support@beautymark.app</a> or ask on our <a href="https://discord.gg/beautymark" class="font-bold text-pink-500 decoration-wavy hover:underline">Discord</a>. 💖
       </p>
     </div>
   </div>
