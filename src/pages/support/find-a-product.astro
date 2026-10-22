@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SupportArticle from "../../components/infopages/SupportArticle.astro";
+---
+<BaseLayout>
+  <SupportArticle path="/support/find-a-product" title="Find a product by name" intro="BeautyMark knows tens of thousands of products from Sephora, Ulta, Target, Soko Glam and lots of brands' own shops. Type a few words and pick yours. 🔍">
+
+    <h2>Find a product</h2>
+    <ol>
+      <li>Tap <strong>+</strong>, then <strong>Skip</strong> on the scan screen. (Or scan first, and come back to this if the scan doesn't find it.)</li>
+      <li>On <strong>Add Product</strong>, tap <strong>Brand</strong> or <strong>Product name</strong>. The <strong>Find your product</strong> screen opens.</li>
+      <li>Type words from the brand and the product name together, in any order. Partial words work: "cerave moist", "snail essence" and "rare blush" all find what you'd expect.</li>
+      <li>Tap your product under <strong>Products</strong>.</li>
+    </ol>
+    <p> BeautyMark fills in the brand, name, shade, category and the store's link, and adds the product's photo. If you've already added a photo of your own, it keeps yours.
+    </p>
+
+    <h2>Browse one brand</h2>
+    <p> Under <strong>Brands</strong>, tap a brand (it shows how many products we know for it). The screen changes to <strong>Choose a product</strong> and only searches that brand. Type part of the name to narrow it down.
+    </p>
+    <ul>
+      <li><strong>Done</strong> (the ✓ on iOS 26 and later) keeps just the brand, if you'd rather type the name yourself.</li>
+      <li><strong>All brands</strong> goes back to searching everything.</li>
+    </ul>
+    <p>Already filled in the brand? Tapping <strong>Product name</strong> starts with that brand's products.</p>
+
+    <h2>When your product isn't listed</h2>
+    <p> The top row always offers <strong>Use "…"</strong> with exactly what you typed. Tap it (or the <strong>done</strong> key on the keyboard) to use your own words. New and niche products, minis, and sets might not be in our list yet.
+    </p>
+
+    <h2>Help other people find it</h2>
+    <p>
+      When you save a product that isn't in our list, BeautyMark may ask <strong>Share this product with Beautymark?</strong> If you tap <strong>Share</strong>, we review it and add it to everyone's list in a future update, so the next person can just pick it. Only the brand, name, shade, category and store link are shared, never your photos or notes.
+    </p>
+    <p>
+      Rather not? Tap <strong>Not Now</strong>, or <strong>Don't Ask Again</strong> to stop the question. You can turn it back on any time in BeautyMark's Settings with <strong>Ask to share new products</strong>.
+    </p>
+
+    <h2>Add a photo</h2>
+    <p> Every product needs a photo. If the one from the list isn't right, or you typed the product in yourself, tap <strong>Add Photo</strong> at the top of Add Product and choose:
+    </p>
+    <ul>
+      <li><strong>Camera</strong>: take a picture of your own.</li>
+      <li><strong>Photo library</strong>: use a picture you already have.</li>
+      <li><strong>Search on web</strong>: look up the product's picture online (available once a brand or name is filled in).</li>
+    </ul>
+    <p>A photo you take or choose yourself is never swapped out automatically.</p>
+
+    <h2>Changing a product you already saved</h2>
+    <p> Open the product, tap the <strong>•••</strong> button at the top right, then <strong>Edit</strong>. Tapping <strong>Product name</strong> opens the same search, starting with the name it has now, so you can add a word or pick a different product.
+    </p>
+  </SupportArticle>
+</BaseLayout>
